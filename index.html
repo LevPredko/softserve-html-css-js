@@ -7,16 +7,44 @@
             background-size: cover; 
             background-repeat: no-repeat; 
         }
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 60px;
+        }
+        h2 { 
+            text-align: center;
+            font-size: 30px;
+        }
+        .photo-group {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .photo {
+            text-align: center; 
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Sample</title>
 </head>
 <body>
-    <h1 align="center" text-transform: uppercase >Carpathian Mountains</h1>
-    <a href = "https://etnosvit.com/uk/galleries/karpaty/" target = "_blank"> 
-        <img src = "img/image1.jpg" height="400" width="600" alt= "Carpathian Mountains" >
-    </a>
-    <p>To see more pictures of the Carpathians, click on the picture!</p>
+    <h1>Carpathian Mountains</h1>
+    <h2>The three highest mountains : </h2>
+    <div class="photo-group">
+        <div class="photo">
+            <p>1: <a href="https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%B2%D0%B5%D1%80%D0%BB%D0%B0" target="_blank">HOVERLA</a></p>
+            <img src="img/image1.jpg" height="200" width="400" alt="Carpathian Mountains">
+        </div>
+        <div class="photo">
+            <p>2: <a href="https://uk.wikipedia.org/wiki/%D0%91%D1%80%D0%B5%D0%B1%D0%B5%D0%BD%D0%B5%D1%81%D0%BA%D1%83%D0%BB_(%D0%B3%D0%BE%D1%80%D0%B0)" target="_blank">BREBENESKUL</a></p>
+            <img src="img/image3.jpg" height="200" width="400" alt="Carpathian Mountains">
+        </div>
+        <div class="photo">
+            <p>3: <a href="https://uk.wikipedia.org/wiki/%D0%9F%D1%96%D0%BF_%D0%86%D0%B2%D0%B0%D0%BD_(%D0%A7%D0%BE%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D0%B0)" target="_blank">PIP IVAN</a></p>
+            <img src="img/image4.jpg" height="200" width="400" alt="Carpathian Mountains">
+        </div>
+    </div>
 </body>
 </html>
